@@ -1,0 +1,491 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+@import url('fonts/pretendard.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+a {
+    font-family: 'notosanskr', 'Pretendard';
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Pretendard';
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12rem;
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* 스크롤바의 width */
+::-webkit-scrollbar-track {
+    background-color: #619ab4;
+}
+
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #1697bf, #62b7ac);
+}
+
+/* 스크롤바 색 */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Pretendard';
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -0.0425rem;
+    color: #333;
+    line-height: 1.4;
+    background-color: #f3f5f2;
+}
+
+.clearfix:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.container {
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.gotop {
+    position: fixed;
+    right: 5rem;
+    left: calc(50% + 50rem);
+    transform: translateX(-50%);
+    bottom: 20rem;
+    width: 5rem;
+    height: 1rem;
+    border: 0;
+    background-color: #8988ff;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5rem;
+    z-index: 99;
+
+    cursor: pointer;
+}
+
+.gotop:hover {
+    background-color: #666;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 8rem;
+    z-index: 9999;
+}
+
+.header .container {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+}
+
+.header-active {
+    top: 0;
+    height: 8rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 10px 0px rgb(34 34 34 6%);
+    transition: all 0.5s;
+}
+
+.header-active .gnb>li>a {
+    color: #754ef9 !important;
+}
+.header-active .gnb>li>a:hover {
+    color: #fff !important;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20rem;
+    height: 5rem;
+    margin-top: 1.2rem;
+    background: url("../images/logo.svg") no-repeat center;
+}
+
+.header-active .logo {
+    background: url("../images/logo_2.svg") no-repeat center;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb>li {
+    float: left;
+    padding: 3rem 1rem;
+}
+
+.gnb>li>a {
+    font-size: 1.6rem;
+    font-family: 'notosanskr';
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    ;
+    letter-spacing: -0.025rem;
+}
+
+.gnb>li>a:hover {
+    color: #754ef9;
+}
+
+/* visual */
+.visual {
+    position: relative;
+    display: block;
+    height: 94rem;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url('../images/pro_1.png') no-repeat center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.visual-txt {
+    position: absolute;
+    left: 0;
+    top: 30rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.visual-txt b {
+    font-size: 6.0rem;
+}
+
+.visual-scroll {
+    position: absolute;
+    right: 0;
+    top: 85rem;
+}
+
+.visual-scroll-down {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+
+.visual-scroll p {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* profile */
+.prof {
+    position: relative;
+    display: block;
+    height: 94rem;
+}
+
+.prof .container {
+    padding: 12rem 0;
+}
+
+.prof2 {
+    position: relative;
+    display: block;
+}
+
+.prof-left {
+    width: 50%;
+}
+
+.pro-2-img {
+    position: absolute;
+    top: 13rem;
+    left: 43rem;
+}
+
+/* publ */
+.publ {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.publ .container {
+    padding: 12rem 0;
+}
+
+.publ-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+}
+
+/* swiper 관련 */
+.publ_slide {
+    position: relative;
+    height: 61rem;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.bg1 {
+    background: url('../images/publ_1_m.png') no-repeat center;
+}
+
+.bg2 {
+    background: url('../images/publ_2_m.png') no-repeat center;
+}
+
+.bg3 {
+    background: url('../images/publ_3_m.png') no-repeat center;
+}
+
+.bg4 {
+    background: url('../images/publ_4_m.png') no-repeat center;
+}
+
+.sw-publ-prev {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    color: #fff;
+    z-index: 999;
+    font-size: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sw-publ-prev:hover {
+    opacity: 1;
+}
+
+.sw-publ-next {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    color: #fff;
+    z-index: 999;
+    font-size: 50px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sw-publ-next:hover {
+    opacity: 1;
+}
+
+/* 
+.publ-box-bt {
+    position: absolute;
+    left: 50%;
+    bottom: 15rem;
+    width: 100%;
+}
+
+.publ-box-bt a {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    color: #333;
+    border-radius: 3rem;
+    margin-right: 2rem;
+}
+
+.publ-box-bt:hover {
+    background-color: #754ef9;
+    color: #fff;
+} */
+
+
+/* rede */
+.rede {
+    position: relative;
+    display: block;
+    height: 94rem;
+    overflow: hidden;
+}
+
+.rede .container {
+    height: 100%;
+    padding: 12rem 0;
+}
+
+.rede-box-bt {
+    position: absolute;
+    left: 0;
+    bottom: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.rede-box-bt a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+/* otherwork */
+.otherwork {
+    position: relative;
+    display: block;
+    height: 94rem;
+    overflow: hidden;
+}
+
+.otherwork .container {
+    height: 100%;
+    padding: 12rem 0;
+}
+
+.other-left {
+    display: block;
+    width: 50%;
+}
+
+.other-right {
+    display: block;
+    width: 50%;
+
+}
+
+/* life */
+.life {
+    position: relative;
+    display: block;
+    height: 94rem;
+    overflow: hidden;
+}
+
+.life .container {
+    height: 100%;
+    padding: 12rem 0;
+}
+
+.life-list {
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-bottom: 5.8rem;
+}
+
+.life-img {
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.life-txt {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #505050;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+
+/* contact */
+.contact {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.contact .container {
+    height: 100%;
+    padding: 12rem 0;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    display: block;
+    height: 33rem;
+}
+
+.footer-img {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    bottom: 0;
+}
