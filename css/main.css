@@ -362,7 +362,6 @@ body {
 
 .publ .container {
     padding: 12rem 0;
-
 }
 
 .publ_slide {
@@ -387,9 +386,11 @@ body {
     height: 100%;
     margin: 0 auto;
     transform: translateX(5rem);
+    text-align: center;
 }
 
-.publ-mockup-txt {}
+.publ-mockup-txt {
+}
 
 
 .publ-box-bt {
@@ -454,9 +455,11 @@ body {
 .bg4 {
     background: url('../images/publ_4_m.png') no-repeat center;
 }
+
 .sw-publ-control {
-    position: relative;
-    display: block;
+    position: absolute;
+    top: 25rem;
+    right: 47rem;
 }
 
 .sw-publ-prev {
@@ -533,20 +536,86 @@ body {
     color: #666;
 }
 
-
-
 /* rede */
 .rede {
     position: relative;
     display: block;
     height: 94rem;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .rede .container {
     padding: 12rem 0;
 }
 
+.sw-rede {
+    position: absolute;
+    top: 35rem;
+}
+
+.rede-box {
+    position: relative;
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.rede-box-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+    color: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.rede-box:hover .rede-box-desc {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    color: #fff;
+    opacity: 1;
+}
+
+.rede-box-desc h3 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.rede-box-desc p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.rede-box-bt {
+    position: absolute;
+    left: 0;
+    bottom: 7rem;
+    width: 100%;
+    text-align: center;
+}
+
+.rede-box-bt a {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    color: #333;
+    border-radius: 5rem;
+    margin-right: 1rem;
+}
+
+.rede-box-bt :hover {
+    background-color: #754ef9;
+    color: #fff;
+}
 
 
 /* otherwork */

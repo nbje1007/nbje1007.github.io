@@ -8,8 +8,6 @@ $(document).ready(function () {
             scrollTop: 0
         });
     });
-
-
     // new Swiper('.sw-rede', {
     //     slidesPerView: 3,
     //     slidesPerGroup: 3,
@@ -26,7 +24,7 @@ $(document).ready(function () {
     // publ slide
     let sw_publ = new Swiper('.sw-publ', {
         autoplay: {
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false,
         },
         loop: true,
@@ -39,7 +37,11 @@ $(document).ready(function () {
             type: "fraction",
         },
     });
-
+    // 리디자인 슬라이드
+    new Swiper('.sw-rede', {
+        slidesPerView: 3,
+        loop: true,
+    });
 
     //  상단영역 기능
     let header = $('.header');
