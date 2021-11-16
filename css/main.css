@@ -304,13 +304,13 @@ body {
 
 .prof-edu-left {
     float: left;
-    
+
 }
 
 .prof-edu-right {
     float: left;
     margin-left: 5rem;
-    
+
 }
 
 .prof-edu-txt {
@@ -327,7 +327,9 @@ body {
 .prof-edu-txt b {
     color: #8988ff;
     font-size: 2.6rem;
+    font-weight: 700;
 }
+
 .prof-edu-txt p {
     font-weight: 700;
 }
@@ -343,6 +345,7 @@ body {
 .prof-box-txt h3 {
     margin-top: 10rem;
     font-size: 3rem;
+    font-weight: 700;
 }
 
 .prof-box-txt b {
@@ -353,25 +356,79 @@ body {
 .publ {
     position: relative;
     display: block;
-    margin: 0 auto;
+    height: 94rem;
+    overflow: hidden;
 }
 
 .publ .container {
     padding: 12rem 0;
+
+}
+
+.publ_slide {
+    position: relative;
+    height: 61rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
 }
 
 .publ-box {
+    position: relative;
+    display: block;
+    width: 91rem;
+    height: 100%;
+}
+
+.publ-box-mockup {
+    width: 51rem;
+    height: 100%;
+    margin: 0 auto;
+    transform: translateX(5rem);
+}
+
+.publ-mockup-txt {}
+
+
+.publ-box-bt {
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 7rem;
     width: 100%;
-    height: 650px;
+    text-align: center;
+}
+
+.publ-box-bt a {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    color: #333;
+    border-radius: 3rem;
+    margin-right: 2rem;
+}
+
+.publ-box-bt :hover {
+    background-color: #754ef9;
+    color: #fff;
+}
+
+
+.publ-box-right {
+    position: relative;
+    display: block;
+    width: 49rem;
+    height: 100%;
+    float: left;
 }
 
 /* swiper 관련 */
 .publ_slide {
     position: relative;
-    height: 61rem;
 }
 
 .swiper-container {
@@ -397,71 +454,6 @@ body {
 .bg4 {
     background: url('../images/publ_4_m.png') no-repeat center;
 }
-
-.publ-box-title {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    color: #333;
-    font-size: 5.0rem;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: -0.08rem;
-    padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.publ-box-title ::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.2rem;
-    width: 2rem;
-    background-color: #707070;
-}
-
-.publ-box-title p {
-    position: relative;
-    font-size: 1.5rem;
-    color: #666;
-}
-
-.publ-box-txt {
-    position: relative;
-    display: block;
-
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #333;
-    letter-spacing: -0.0375rem;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-}
-
-.publ-box-link {
-    position: relative;
-    display: block;
-    width: 11.4rem;
-
-    text-align: center;
-    color: #666;
-    font-size: 1.3rem;
-    font-size: 400;
-    letter-spacing: -0.0375rem;
-    line-height: 3.4rem;
-
-    border: 1px solid #bbb;
-    background-color: #fff;
-
-    transition: background-color 0.5s;
-}
-
-.publ-box-link:hover {
-    background-color: #f8f8f8;
-}
-
 .sw-publ-control {
     position: relative;
     display: block;
@@ -498,11 +490,12 @@ body {
 }
 
 .sw-publ-pg {
+    position: absolute;
     left: 2.6rem;
     top: -2rem;
     width: 9rem;
     font-family: 'notosanskr', 'Pretendard';
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     letter-spacing: -0.04rem;
     color: #bbb;
@@ -511,34 +504,35 @@ body {
 .sw-publ-pg .swiper-pagination-current {
     color: #222;
     font-family: 'notosanskr', 'Pretendard';
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
-/* 
-.publ-box-bt {
-    position: absolute;
-    left: 50%;
-    bottom: 15rem;
-    width: 100%;
-}
-
-.publ-box-bt a {
-    display: inline-block;
-    font-size: 1.6rem;
+.publ-box-txt {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
     font-weight: 400;
-    text-transform: uppercase;
-    background-color: #fff;
-    padding: 0.5rem 1rem;
     color: #333;
-    border-radius: 3rem;
-    margin-right: 2rem;
+    letter-spacing: -0.0375rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
 }
 
-.publ-box-bt:hover {
-    background-color: #754ef9;
-    color: #fff;
-} */
+.publ-box-txt b {
+    position: relative;
+    font-size: 4rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.publ-box-txt p {
+    position: relative;
+    font-size: 1.5rem;
+    color: #666;
+}
+
 
 
 /* rede */
@@ -553,149 +547,6 @@ body {
     padding: 12rem 0;
 }
 
-.rede-box {
-    position: relative;
-    display: block;
-    width: 30rem;
-    height: 100%;
-}
-
-.rede-slide {
-    position: relative;
-    display: block;
-    width: 90rem;
-    height: 100%;
-}
-
-.rede-box-title {
-    position: absolute;
-    left: 0;
-    top: -10rem;
-    display: block;
-    color: #333;
-    font-size: 5.0rem;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: -0.08rem;
-    padding-bottom: 2.5rem;
-    margin-bottom: 2.5rem;
-}
-
-.rede-box-title ::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0.2rem;
-    width: 2rem;
-    background-color: #707070;
-}
-
-.rede-box-title p {
-    position: relative;
-    font-size: 1.5rem;
-    color: #666;
-}
-
-.rede-box-txt {
-    position: relative;
-    display: block;
-
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #333;
-    letter-spacing: -0.0375rem;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-}
-
-.rede-box-link {
-    position: relative;
-    display: block;
-    width: 11.4rem;
-
-    text-align: center;
-    color: #666;
-    font-size: 1.3rem;
-    font-size: 400;
-    letter-spacing: -0.0375rem;
-    line-height: 3.4rem;
-
-    border: 1px solid #bbb;
-    background-color: #fff;
-
-    transition: background-color 0.5s;
-}
-
-.rede-box-link:hover {
-    background-color: #f8f8f8;
-}
-
-.sw-rede-control {
-    position: absolute;
-    left: 0;
-    top: -20rem;
-    display: block;
-}
-
-.sw-rede-prev {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 2.6rem;
-    height: 2rem;
-    background: url('../images/swiperArrP.png')no-repeat;
-    background-position: 0 0;
-}
-
-.sw-rede-prev:hover {
-    background-position: 0 -2rem;
-    cursor: pointer;
-}
-
-.sw-rede-next {
-    position: absolute;
-    left: 11.5rem;
-    top: 0;
-    display: block;
-    width: 2.6rem;
-    height: 2rem;
-    background: url('../images/swiperArrN.png')no-repeat;
-    background-position: 0 0;
-}
-
-.sw-rede-next:hover {
-    background-position: 0 -2rem;
-    cursor: pointer;
-}
-
-.sw-rede-pg {
-    left: 2.6rem;
-    top: -2rem;
-    width: 9rem;
-    font-family: 'notosanskr', 'Pretendard';
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: -0.04rem;
-    color: #bbb;
-}
-
-.sw-rede-pg .swiper-pagination-current {
-    color: #222;
-    font-family: 'notosanskr', 'Pretendard';
-    font-size: 4.8rem;
-    font-weight: 400;
-}
-
-.rede-slide {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.sw-rede {}
 
 
 /* otherwork */
