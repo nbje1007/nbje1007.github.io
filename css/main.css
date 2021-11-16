@@ -99,8 +99,8 @@ body {
 
 .gotop {
     position: fixed;
-    right: 5rem;
-    left: calc(50% + 50rem);
+    /*right: 5rem;*/
+    left: calc(50% + 70rem);
     transform: translateX(-50%);
     bottom: 20rem;
     width: 5rem;
@@ -114,10 +114,16 @@ body {
     z-index: 99;
 
     cursor: pointer;
+
+    display: none;
 }
 
 .gotop:hover {
     background-color: #666;
+}
+
+.gotop-active {
+    display: block;
 }
 
 .wrap {
@@ -145,17 +151,18 @@ body {
 .header-active {
     top: 0;
     height: 8rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0px 0px 10px 0px rgb(34 34 34 6%);
+    box-shadow: 1px 1px 2px #754ef9;
     transition: all 0.5s;
 }
 
 .header-active .gnb>li>a {
     color: #754ef9 !important;
 }
+
 .header-active .gnb>li>a:hover {
     color: #fff !important;
 }
+
 .logo {
     position: absolute;
     left: 0;
@@ -224,12 +231,36 @@ body {
     position: absolute;
     right: 0;
     top: 85rem;
+    text-align: center;
+}
+
+.visual-scroll p {
+    width: 100%;
 }
 
 .visual-scroll-down {
     position: absolute;
     top: 40px;
     left: 50%;
+    animation-name: scrollmotion;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes scrollmotion {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 15px);
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
 }
 
 .visual-scroll p {
@@ -243,6 +274,7 @@ body {
     position: relative;
     display: block;
     height: 94rem;
+    overflow: hidden;
 }
 
 .prof .container {
@@ -252,6 +284,8 @@ body {
 .prof2 {
     position: relative;
     display: block;
+    height: 94rem;
+    overflow: hidden;
 }
 
 .prof-left {
@@ -262,6 +296,57 @@ body {
     position: absolute;
     top: 13rem;
     left: 43rem;
+}
+
+.prof-right {
+    width: 50%;
+}
+
+.prof-edu-left {
+    float: left;
+    
+}
+
+.prof-edu-right {
+    float: left;
+    margin-left: 5rem;
+    
+}
+
+.prof-edu-txt {
+    left: 2.6rem;
+    top: -2rem;
+    width: 9rem;
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    color: #333;
+}
+
+.prof-edu-txt b {
+    color: #8988ff;
+    font-size: 2.6rem;
+}
+.prof-edu-txt p {
+    font-weight: 700;
+}
+
+.prof-box-txt {
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    color: #333;
+}
+
+.prof-box-txt h3 {
+    margin-top: 10rem;
+    font-size: 3rem;
+}
+
+.prof-box-txt b {
+    font-size: 2.4rem;
 }
 
 /* publ */
@@ -277,7 +362,7 @@ body {
 
 .publ-box {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 650px;
@@ -288,6 +373,7 @@ body {
     position: relative;
     height: 61rem;
 }
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -312,38 +398,121 @@ body {
     background: url('../images/publ_4_m.png') no-repeat center;
 }
 
-.sw-publ-prev {
+.publ-box-title {
     position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 0;
+    top: 0;
     display: block;
-    color: #fff;
-    z-index: 999;
-    font-size: 50px;
-    opacity: 0.8;
-    cursor: pointer;
+    color: #333;
+    font-size: 5.0rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.08rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.publ-box-title ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 2rem;
+    background-color: #707070;
+}
+
+.publ-box-title p {
+    position: relative;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.publ-box-txt {
+    position: relative;
+    display: block;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: -0.0375rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.publ-box-link {
+    position: relative;
+    display: block;
+    width: 11.4rem;
+
+    text-align: center;
+    color: #666;
+    font-size: 1.3rem;
+    font-size: 400;
+    letter-spacing: -0.0375rem;
+    line-height: 3.4rem;
+
+    border: 1px solid #bbb;
+    background-color: #fff;
+
+    transition: background-color 0.5s;
+}
+
+.publ-box-link:hover {
+    background-color: #f8f8f8;
+}
+
+.sw-publ-control {
+    position: relative;
+    display: block;
+}
+
+.sw-publ-prev {
+    position: relative;
+    display: block;
+    width: 2.6rem;
+    height: 2rem;
+    background: url('../images/swiperArrP.png')no-repeat;
+    background-position: 0 0;
 }
 
 .sw-publ-prev:hover {
-    opacity: 1;
+    background-position: 0 -2rem;
+    cursor: pointer;
 }
 
 .sw-publ-next {
     position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 11.5rem;
+    top: 0;
     display: block;
-    color: #fff;
-    z-index: 999;
-    font-size: 50px;
-    opacity: 0.8;
-    cursor: pointer;
+    width: 2.6rem;
+    height: 2rem;
+    background: url('../images/swiperArrN.png')no-repeat;
+    background-position: 0 0;
 }
 
 .sw-publ-next:hover {
-    opacity: 1;
+    background-position: 0 -2rem;
+    cursor: pointer;
+}
+
+.sw-publ-pg {
+    left: 2.6rem;
+    top: -2rem;
+    width: 9rem;
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    color: #bbb;
+}
+
+.sw-publ-pg .swiper-pagination-current {
+    color: #222;
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 4.8rem;
+    font-weight: 400;
 }
 
 /* 
@@ -377,31 +546,157 @@ body {
     position: relative;
     display: block;
     height: 94rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .rede .container {
-    height: 100%;
     padding: 12rem 0;
 }
 
-.rede-box-bt {
-    position: absolute;
-    left: 0;
-    bottom: 5rem;
-    width: 100%;
-    text-align: center;
+.rede-box {
+    position: relative;
+    display: block;
+    width: 30rem;
+    height: 100%;
 }
 
-.rede-box-bt a {
-    display: inline-block;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #000;
-    padding: 0.5rem 1rem;
-    color: #fff;
+.rede-slide {
+    position: relative;
+    display: block;
+    width: 90rem;
+    height: 100%;
 }
+
+.rede-box-title {
+    position: absolute;
+    left: 0;
+    top: -10rem;
+    display: block;
+    color: #333;
+    font-size: 5.0rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.08rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.rede-box-title ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 2rem;
+    background-color: #707070;
+}
+
+.rede-box-title p {
+    position: relative;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.rede-box-txt {
+    position: relative;
+    display: block;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: -0.0375rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.rede-box-link {
+    position: relative;
+    display: block;
+    width: 11.4rem;
+
+    text-align: center;
+    color: #666;
+    font-size: 1.3rem;
+    font-size: 400;
+    letter-spacing: -0.0375rem;
+    line-height: 3.4rem;
+
+    border: 1px solid #bbb;
+    background-color: #fff;
+
+    transition: background-color 0.5s;
+}
+
+.rede-box-link:hover {
+    background-color: #f8f8f8;
+}
+
+.sw-rede-control {
+    position: absolute;
+    left: 0;
+    top: -20rem;
+    display: block;
+}
+
+.sw-rede-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 2.6rem;
+    height: 2rem;
+    background: url('../images/swiperArrP.png')no-repeat;
+    background-position: 0 0;
+}
+
+.sw-rede-prev:hover {
+    background-position: 0 -2rem;
+    cursor: pointer;
+}
+
+.sw-rede-next {
+    position: absolute;
+    left: 11.5rem;
+    top: 0;
+    display: block;
+    width: 2.6rem;
+    height: 2rem;
+    background: url('../images/swiperArrN.png')no-repeat;
+    background-position: 0 0;
+}
+
+.sw-rede-next:hover {
+    background-position: 0 -2rem;
+    cursor: pointer;
+}
+
+.sw-rede-pg {
+    left: 2.6rem;
+    top: -2rem;
+    width: 9rem;
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    color: #bbb;
+}
+
+.sw-rede-pg .swiper-pagination-current {
+    color: #222;
+    font-family: 'notosanskr', 'Pretendard';
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+.rede-slide {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sw-rede {}
+
 
 /* otherwork */
 .otherwork {
