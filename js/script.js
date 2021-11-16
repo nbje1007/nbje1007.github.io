@@ -1,19 +1,27 @@
 $(document).ready(function () {
 
     // 위로가기 기능
-    $('.gotop').click(function () {
+    var gotop = $('.gotop');
+    gotop.click(function () {
 
         $('html, body').animate({
             scrollTop: 0
         });
     });
-    // // 리디자인 슬라이드
-    // new Swiper('.sw-rede', {
-    //     slidesPerView: 4,
-    //     loop: true,
-    // });
-    // swiper 슬라이드 관련
-    // swiper 슬라이드 관련
+    new Swiper('.sw-rede', {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 16,
+        navigation: {
+            nextEl: ".sw-rede-next",
+            prevEl: ".sw-rede-prev",
+        },
+        pagination: {
+            el: ".sw-rede-pg",
+            type: "fraction",
+        },
+    });
+
     var sw_visual = new Swiper('.swiper-container', {
 
         // 효과 : 필요에 의해서 사용
@@ -49,25 +57,22 @@ $(document).ready(function () {
         },
 
     });
-
-    // 마우스 오버/아웃 처리
-    $('.visual').mouseenter(function () {
-        // 슬라이드 멈추기
-        sw_visual.autoplay.stop();
-    });
-    $('.visual').mouseleave(function () {
-        // 슬라이드 자동재실행
-        sw_visual.autoplay.start();
-    });
+    
     //  상단영역 기능
     let header = $('.header');
     $(window).scroll(function () {
         let scrollbar = $(window).scrollTop();
 
-        if (scrollbar > 0) {
+        if (scrollbar > 900) {
             header.addClass('header-active');
         } else {
             header.removeClass('header-active');
+        }
+
+        if(scrollbar > 540) {
+            gotop.addClass('gotop-active');
+        }else{
+            gotop.removeClass('gotop-active');
         }
     });
 });
