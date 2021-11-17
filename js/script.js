@@ -60,4 +60,9 @@ $(document).ready(function () {
             gotop.removeClass('gotop-active');
         }
     });
+    // other work 슬라이드
+    new Swiper('.sw-other', {
+        slidesPerView: 1,
+        loop: true,
+    });
 });
