@@ -28,6 +28,8 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/respond.min.js"></script>
+    <!-- Typing -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
     <link href="js/aos/aos.css" rel="stylesheet">
@@ -62,9 +64,13 @@
         <section class="visual">
             <div class="container">
                 <div class="visual-txt">
-                    <span><b>생각</b>을 함께 <br>
+                    <p id="typeStyle">
+                    </p>
+                    <!-- <p class="typing-txt">
+                        <b>생각</b>을 함께 <br>
                         <b>공유</b>하는디자이너<br>
-                        <b>곽혜영</b>입니다.</span>
+                        <b>곽혜영</b>입니다.
+                    </p> -->
                 </div>
                 <div class="visual-scroll">
                     <img src="images/scroll.png" class="visual-scroll-down" alt="스크롤">
@@ -78,14 +84,28 @@
             <div class="container clearfix">
                 <h2> Profile </h2>
                 <div class="prof-left left">
-                    <img src="images/pro_2.png" class="pro-2-img" alt="프로필">
-                    <img src="images/pro_3.png" alt="프로필">
+                    <img src="images/pro_2.png" class="pro-2-img" alt="프로필" data-aos="fade-up-right"
+                        data-aos-delay="500" data-aos-duration="1000" data-aos-easing="linear">
+                    <img src="images/pro_3.png" alt="프로필" data-aos="fade-up-left" data-aos-delay="500"
+                        data-aos-duration="1000" data-aos-easing="linear">
                 </div>
-                <div class="prof-right right">
+                <div class="prof-right right" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000"
+                    data-aos-easing="linear">
                     <div class="prof-edu-left">
                         <span class="prof-edu-txt">
-                            <h3>곽혜영</h3>
-                            KWAG HYEYEONG<br>
+                            <ul>
+                                <li>
+                                    <span class="name-txt1">
+                                        곽혜영
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="name-txt2">
+                                        KWAGHYEYEONG<br>
+                                        1993.11.01
+                                    </span>
+                                </li>
+                            </ul>
                             <br>
                             <b>EDUCATION</b><br>
                             2012.03 ~ 2017.02<br>
@@ -97,13 +117,13 @@
                             웹퍼블리셔 디지털<br>
                             인재 양성 과정 수료<br>
                             <br>
+                            <br>
                             <b>WORK</b><br>
                             2017.07 ~ 2021.06<br>
                             주식회사 클라이 디자인팀 대리<br>
                             <br>
                             <b>CERTIFICATE</b><br>
                             2021.09 GTQ 포토샵 1급<br>
-                            <br>
                             2011.03 ITQ 아래한글 A등급<br>
                             <br>
                         </span>
@@ -140,32 +160,32 @@
         </section>
         <!--// profile-1 -->
         <!-- profile-2 -->
-        <section class="prof2" id="profile">
+        <section class="prof2" id="profile" data-aos="fade-up" data-aos-delay="500"
+            data-aos-anchor-placement="top-center">
             <div class="container clearfix">
                 <div class="prof-left left">
-                    <span class="prof-box-txt">
+                    <span class="possibility-title">
                         <h3>Possibility</h3>
-                        <br>
-                        <br>
-                        <b>창의성</b> Creative<br>
-                        <br>
-                        디자인 전공으로 전문 지식을 쌓고 실무를 통해 배우고 경험한<br>
-                        디자인을 바탕으로 끊임없이 발전된 디자인을 창조합니다.<br>
-                        <br>
-                        <br>
-                        <b>소통</b> Creative<br>
-                        <br>
-                        의견을 내는 것을 두려워하지 않고, 다른 의견을 경청하며 피드백을<br>
-                        적극 수용하는 등 열린 자세로 원활한 소통을 이끌 수 있습니다.<br>
-                        <br>
-                        <br>
-                        <b>책임감과 인내심</b> Perseverance<br>
-                        <br>
-                        작업을 진행할 때 체계적으로 정리하고 끝까지 해내는 인내심을 가지고 있습니다.
-                        <br>
-                        정해진 시간 안에서 책임감을 가지고 주어진 업무를 수행해 나갑니다.<br>
-                        <br>
-                        <br>
+                        <ul class="possibility-txt">
+                            <li>
+                                <b>창의성</b> Creative<br>
+                                <br>
+                                디자인 전공으로 전문 지식을 쌓고 실무를 통해 배우고 경험한<br>
+                                디자인을 바탕으로 끊임없이 발전된 디자인을 창조합니다.<br>
+                            <li>
+                            <li>
+                                <b>소통</b> Creative<br>
+                                <br>
+                                의견을 내는 것을 두려워하지 않고, 다른 의견을 경청하며 피드백을<br>
+                                적극 수용하는 등 열린 자세로 원활한 소통을 이끌 수 있습니다.<br>
+                            </li>
+                            <li>
+                                <b>책임감과 인내심</b> Perseverance<br>
+                                <br>
+                                작업을 진행할 때 체계적으로 정리하고 끝까지 해내는 인내심을 가지고 있습니다.
+                                <br>
+                                정해진 시간 안에서 책임감을 가지고 주어진 업무를 수행해 나갑니다.<br>
+                            </li>
                     </span>
                 </div>
                 <div class="prof-right right">
@@ -175,7 +195,7 @@
         </section>
         <!--// profile-2 -->
         <!-- publshing -->
-        <section class="publ" id="publshing">
+        <section class="publ" id="publshing" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div class="container">
                 <h2>Publishing</h2>
                 <div class="publ_slide">
@@ -204,21 +224,22 @@
                                         <b>STX건설</b><br>
                                         <p>S T X C O N S T</p>
                                         <br>
-                                        기여도<br>
+                                        <b>기여도</b><br>
                                         퍼블리싱 100%<br>
                                         <br>
-                                        사용프로그램<br>
+                                        <b>사용프로그램</b><br>
                                         Html5 CSS<br>
                                         <br>
-                                        프로젝트 소개<br>
+                                        <b>프로젝트 소개</b><br>
                                         웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
                                         처음 만들었던 사이트입니다.<br>
                                         <br>
-                                        제작기간 - 10일<br>
+                                        <b>제작기간</b> 10일<br>
                                         <br>
-                                        제작페이지 - 메인페이지<br>
+                                        <b>제작페이지</b> 메인 페이지<br>
                                         <br>
-                                        제작툴 - 아톰에디터<br>
+                                        <b>제작툴</b> 아톰 에디터<br>
+                                        <br>
                                     </span>
                                 </div>
                             </div>
@@ -244,21 +265,22 @@
                                         <b>풀무원녹즙</b><br>
                                         <p>g r e e n j u i c e</p>
                                         <br>
-                                        기여도<br>
+                                        <b>기여도</b><br>
                                         퍼블리싱 100%<br>
                                         <br>
-                                        사용프로그램<br>
+                                        <b>사용프로그램</b><br>
                                         Html5 CSS<br>
                                         <br>
-                                        프로젝트 소개<br>
+                                        <b>프로젝트 소개</b><br>
                                         웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
                                         처음 만들었던 사이트입니다.<br>
                                         <br>
-                                        제작기간 - 10일<br>
+                                        <b>제작기간</b> 10일<br>
                                         <br>
-                                        제작페이지 - 메인페이지<br>
+                                        <b>제작페이지</b> 메인 페이지<br>
                                         <br>
-                                        제작툴 - 비주얼코드<br>
+                                        <b>제작툴</b> 아톰 에디터<br>
+                                        <br>
                                     </span>
                                 </div>
                             </div>
@@ -284,21 +306,22 @@
                                         <b>한살림 장보기</b><br>
                                         <p>h a n s a l i m</p>
                                         <br>
-                                        기여도<br>
+                                        <b>기여도</b><br>
                                         퍼블리싱 100%<br>
                                         <br>
-                                        사용프로그램<br>
+                                        <b>사용프로그램</b><br>
                                         Html5 CSS<br>
                                         <br>
-                                        프로젝트 소개<br>
+                                        <b>프로젝트 소개</b><br>
                                         웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
                                         처음 만들었던 사이트입니다.<br>
                                         <br>
-                                        제작기간 - 10일<br>
+                                        <b>제작기간</b> 10일<br>
                                         <br>
-                                        제작페이지 - 메인페이지<br>
+                                        <b>제작페이지</b> 메인 페이지<br>
                                         <br>
-                                        제작툴 - 비주얼코드<br>
+                                        <b>제작툴</b> 비주얼 코드<br>
+                                        <br>
                                     </span>
                                 </div>
                             </div>
@@ -324,21 +347,22 @@
                                         <b>풀무원샘물</b><br>
                                         <p>P u l m u o n e w a t e r</p>
                                         <br>
-                                        기여도<br>
+                                        <b>기여도</b><br>
                                         퍼블리싱 100%<br>
                                         <br>
-                                        사용프로그램<br>
+                                        <b>사용프로그램</b><br>
                                         Html5 CSS<br>
                                         <br>
-                                        프로젝트 소개<br>
+                                        <b>프로젝트 소개</b><br>
                                         웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
                                         처음 만들었던 사이트입니다.<br>
                                         <br>
-                                        제작기간 - 10일<br>
+                                        <b>제작기간</b> 10일<br>
                                         <br>
-                                        제작페이지 - 메인페이지<br>
+                                        <b>제작페이지</b> 메인 페이지<br>
                                         <br>
-                                        제작툴 - 비주얼코드<br>
+                                        <b>제작툴</b> 비주얼 코드<br>
+                                        <br>
                                     </span>
                                 </div>
                             </div>
@@ -364,40 +388,41 @@
                                         <b>넥서스</b><br>
                                         <p>n e x u s - o f f i c i a l</p>
                                         <br>
-                                        기여도<br>
+                                        <b>기여도</b><br>
                                         퍼블리싱 100%<br>
                                         <br>
-                                        사용프로그램<br>
+                                        <b>사용프로그램</b><br>
                                         Html5 CSS<br>
                                         <br>
-                                        프로젝트 소개<br>
+                                        <b>프로젝트 소개</b><br>
                                         웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
                                         처음 만들었던 사이트입니다.<br>
                                         <br>
-                                        제작기간 - 10일<br>
+                                        <b>제작기간</b> 10일<br>
                                         <br>
-                                        제작페이지 - 메인페이지<br>
+                                        <b>제작페이지</b> 메인 페이지<br>
                                         <br>
-                                        제작툴 - 비주얼코드<br>
+                                        <b>제작툴</b> 비주얼 코드<br>
+                                        <br>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--// 퍼블리싱 슬라이드 -->
+                <div class="sw-publ-control">
+                    <span class="sw-publ-prev"></span>
+                    <div class="swiper-pagination sw-publ-pg"></div>
+                    <span class="sw-publ-next"></span>
+                </div>
             </div>
         </section>
-        <!--// 퍼블리싱 슬라이드 -->
-        <div class="sw-publ-control">
-            <span class="sw-publ-prev"></span>
-            <div class="swiper-pagination sw-publ-pg"></div>
-            <span class="sw-publ-next"></span>
-        </div>
     </div>
     </section>
     <!--// publshing -->
     <!-- redesing -->
-    <section class="rede" id="redesign">
+    <section class="rede" id="redesign" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-center">
         <div class="container">
             <h2>redesign</h2>
             <div class="swiper-container sw-rede">
@@ -428,7 +453,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="rede-box">
-                            <img src="images/red_1.png" alt="">
+                            <img src="images/red_2.png" alt="">
                             <div class="rede-box-desc">
                                 <h3>수목원</h3>
                                 <p>
@@ -506,30 +531,29 @@
         <div class="container">
             <h2>other work</h2>
             <div class="other-wrap clearfix">
-                <div class="other-left left">
+                <div class="other-list left" data-aos="zoom-out-right" data-aos-delay="500">
+                    <div class="other-list-scroll">
+                        <p>mouse hover</p>
+                    </div>
                     <ul class="other-list">
                         <li class="other-etc1">
                             <a href="#" target="_blank">
                                 <img src="images/etc_1.png" alt="커스텀디자인">
-                                <span>Custom design</span>
                             </a>
                         </li>
                         <li class="other-etc2">
                             <a href="#" target="_blank">
                                 <img src="images/etc_2.png" alt="커스텀디자인">
-                                <span>Pattern design</span>
                             </a>
                         </li>
                         <li class="other-etc3">
                             <a href="#" target="_blank">
                                 <img src="images/etc_3.png" alt="커스텀디자인">
-                                <span>Pattern design</span>
                             </a>
                         </li>
                         <li class="other-etc4">
                             <a href="#" target="_blank">
                                 <img src="images/etc_4.png" alt="커스텀디자인">
-                                <span>Logo design</span>
                             </a>
                         </li>
                     </ul>
@@ -539,7 +563,17 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="#" target="_blank">
-                                    <img src="images/etc_mokup.png" alt="커스텀디자인">
+                                    <div id="etc_mokup1_img">
+                                        <img src="images/etc_kly_1.png" alt="커스텀 디자인">
+                                    </div>
+                                    <div id="etc_mokup2_img">
+                                        <img src="images/etc_kly_2.png" alt="커스텀 디자인">
+                                    </div>
+                                    <img src="images/etc_mokup1.png" alt="커스텀디자인">
+                                    <div class="etc-scroll">
+                                        <img src="images/scroll_2.png" class="visual-scroll-down" alt="스크롤">
+                                        <p>scroll down</p>
+                                    </div>
                                     <div class="other-txt">
                                         <span><b>Custom design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
                                             디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
@@ -548,24 +582,30 @@
                             </div>
                             <div class="swiper-slide">
                                 <a href="#" target="_blank">
-                                    <img src="images/etc_mokup2.png" alt="커스텀디자인">
+                                    <img src="images/etc_mokup2.png" alt="패턴 디자인">
                                     <div class="other-txt">
                                         <span><b>Pattern design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
                                             디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
                                     </div>
                             </div>
                             <div class="swiper-slide">
-                                <a href="#" target="_blank">
-                                    <img src="images/etc_mokup3.png" alt="커스텀디자인">
-                                    <div class="other-txt">
-                                        <span><b>Pattern design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
-                                            디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
-                                    </div>
+                                <img src="images/etc_mokup3.png" alt="패턴 디자인">
+                                <div class="other-txt">
+                                    <span><b>Pattern design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
+                                        디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
+                                </div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="#" target="_blank">
-                                    <img src="images/etc_mokup4.png" alt="커스텀디자인">
+                                    <div id="etc_mokup4_img">
+                                        <img src="images/etc_logo.png" alt="로고 디자인">
+                                    </div>
+                                    <img src="images/etc_mokup4.png" alt="로고디자인">
+                                    <div class="etc-scroll">
+                                        <img src="images/scroll_2.png" class="visual-scroll-down" alt="스크롤">
+                                        <p>scroll down</p>
+                                    </div>
                                     <div class="other-txt">
                                         <span><b>Logo design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
                                             디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
@@ -584,8 +624,9 @@
         <div class="container clearfix">
             <h2>life</h2>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-down" data-aos-delay="500">
                     <img src="images/life_1.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     전시관람등 영감을 주는 곳에<br>
@@ -593,16 +634,18 @@
                 </p>
             </div>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-down" data-aos-delay="500">
                     <img src="images/life_2.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     가까운 곳에 방문하여<br>
                     재충전하는 시간을 보냅니다. </p>
             </div>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-down" data-aos-delay="500">
                     <img src="images/life_3.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     주 3회 이상은 운동을 하여<br>
@@ -610,25 +653,29 @@
                 </p>
             </div>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-up" data-aos-delay="500">
                     <img src="images/life_4.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     다양한 아르바이트 경험으로 <br>
-                    책임감과 성실함을 배우게 되었습니다.
+                    책임감과 성실함을 <br>
+                    배우게 되었습니다.
                 </p>
             </div>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-up" data-aos-delay="500">
                     <img src="images/life_5.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     학부생일때 3년동안 보육원<br>
                     봉사활동을 다녔습니다. </p>
             </div>
             <div class="life-list">
-                <span class="life-img">
+                <span class="life-img" data-aos="fade-up" data-aos-delay="500">
                     <img src="images/life_6.png" alt="">
+                    <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
                     다양한 이야기를 나누며 <br>
@@ -642,14 +689,15 @@
     <section class="contact" id="contact">
         <div class="container clearfix">
             <h2> Contact </h2>
-            <div class="cont-left left">
-                <img src="images/cont_1.png" alt="프로필">
+            <div class="cont-left left" data-aos="fade-up-right" data-aos-delay="500">
+                <img src="images/cont_2.png" class="cont-point" data-aos="fade-up-left" data-aos-delay="500"
+                    data-aos-duration="1000" data-aos-easing="linear">
+                <img src="images/cont_1.png" class="cont-qr">
             </div>
-            <div class="cont-right right">
+            <div class="cont-right right" data-aos="fade-left" data-aos-delay="500">
                 <span class="cont-title">
                     <b>함께</b> 더 좋은 <b>방향</b>을 찾기 위해 <br>
                     고민하고 <b>노력</b>하는 디자이너 <br>
-                    <br>
                     <br>
                 </span>
                 <span class="cont-txt">
@@ -666,13 +714,16 @@
                     </a>
                 </div>
             </div>
-
+        </div>
     </section>
     <!--// contact -->
     <!-- foother -->
     <div class="footer">
-        <!-- COPYRIGHT ⓒ 2021 웹디자이너 곽혜영. ALL RIGHTS RESERVED. 본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다. -->
         <img src="images/footer_1.png" alt="" class="footer-img">
+        <div class="footer-copy">
+            COPYRIGHT ⓒ 2021 웹디자이너 곽혜영. ALL RIGHTS RESERVED. 본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다. 사용된 일부 이미지 및 폰트 등은
+            별도의 출처가 있음을 밝혀 드립니다.
+        </div>
     </div>
     <!--// foother -->
 </body>

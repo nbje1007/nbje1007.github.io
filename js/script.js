@@ -1,27 +1,18 @@
 $(document).ready(function () {
-
     // 위로가기 기능
     var gotop = $('.gotop');
     gotop.click(function () {
+
 
         $('html, body').animate({
             scrollTop: 0
         });
     });
-    // new Swiper('.sw-rede', {
-    //     slidesPerView: 3,
-    //     slidesPerGroup: 3,
-    //     spaceBetween: 16,
-    //     navigation: {
-    //         nextEl: ".sw-rede-next",
-    //         prevEl: ".sw-rede-prev",
-    //     },
-    //     pagination: {
-    //         el: ".sw-rede-pg",
-    //         type: "fraction",
-    //     },
-    // });
-    // publ slide
+    // AOS기능
+    window.onload = function () {
+        AOS.init();
+    }
+
     let sw_publ = new Swiper('.sw-publ', {
         autoplay: {
             delay: 3000,
@@ -61,8 +52,47 @@ $(document).ready(function () {
         }
     });
     // other work 슬라이드
-    new Swiper('.sw-other', {
+    var sw_other = new Swiper('.sw-other', {
         slidesPerView: 1,
-        loop: true,
+        // loop: true,
     });
+    $("#etc_mokup1_img").niceScroll({
+        cursorcolor: "#999",
+        cursoropacitymax: 0,
+    });
+    $("#etc_mokup2_img").niceScroll({
+        cursorcolor: "#999",
+        cursoropacitymax: 0,
+    });
+    $("#etc_mokup4_img").niceScroll({
+        cursorcolor: "#999",
+        cursoropacitymax: 0,
+    });
+
+
+    var other_list_a = $('.other-list a')
+    $.each(other_list_a, function (index, item) {
+        $(this).click(function (e) {
+            //href 막기
+            e.preventDefault();
+            sw_other.slideTo(index);
+        });
+    })
+
+
+
+    // 비주얼 커서 효과
+    var text = document.getElementById("typeStyle");
+    var typewriter = new Typewriter(text, {
+        loop: true
+    });
+    typewriter.typeString('<b>생각</b>을 <b>함께</b><br>')
+        .pauseFor(2000)
+        .typeString('<b>공유</b>하는 <b>디자이너</b><br>')
+        .pauseFor(2000)
+        .typeString('<b>곽혜영</b>입니다.')
+        .pauseFor(2500)
+        .start();
+
+
 });
