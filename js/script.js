@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     let sw_publ = new Swiper('.sw-publ', {
         autoplay: {
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false,
         },
         loop: true,
@@ -25,15 +25,23 @@ $(document).ready(function () {
         },
         pagination: {
             el: ".sw-publ-pg",
-            type: "fraction",
-        },
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        }
     });
-    // 리디자인 슬라이드
-    new Swiper('.sw-rede', {
-        slidesPerView: 3,
-        loop: true,
-    });
+    // 스크롤시 애니메이션 
+    $('.pro-main-chart').waypoint(function (dir) {
+        if (dir == "down") {
+            $('.pro-main-chart').addClass('pro-main-chart-active');
+        } else {
+            $('.pro-main-chart').removeClass('pro-main-chart-active');
+        }
+    }, {
+        offset: '90%'
 
+    });
     //  상단영역 기능
     let header = $('.header');
     $(window).scroll(function () {
@@ -87,12 +95,10 @@ $(document).ready(function () {
         loop: true
     });
     typewriter.typeString('<b>생각</b>을 <b>함께</b><br>')
-        .pauseFor(2000)
+        .pauseFor(1500)
         .typeString('<b>공유</b>하는 <b>디자이너</b><br>')
-        .pauseFor(2000)
+        .pauseFor(1500)
         .typeString('<b>곽혜영</b>입니다.')
-        .pauseFor(2500)
+        .pauseFor(2000)
         .start();
-
-
 });

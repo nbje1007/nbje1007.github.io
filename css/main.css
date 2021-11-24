@@ -93,7 +93,7 @@ body {
 
 .container {
     position: relative;
-    width: 1400px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -102,20 +102,21 @@ body {
     /*right: 5rem;*/
     left: calc(50% + 70rem);
     transform: translateX(-50%);
-    bottom: 20rem;
-    width: 5rem;
-    height: 1rem;
-    border: 0;
-    background-color: #8988ff;
+    width: 40px;
+    height: 40px;
+    bottom: 10rem;
+    border: none;
+    border-radius: 50px;
     color: #fff;
-    font-size: 2rem;
+    background-color: #8988ff !important;
+    font-size: 3rem;
     text-align: center;
-    line-height: 5rem;
+    line-height: 2rem;
     z-index: 99;
 }
 
 .gotop:hover {
-    background-color: #666;
+    background-color: #754ef9 !important;
 }
 
 .gotop-active {
@@ -157,7 +158,8 @@ body {
 }
 
 .header-active .gnb>li>a:hover {
-    color: #fff !important;
+    text-decoration-line: underline;
+    text-underline-position: under;
 }
 
 .logo {
@@ -235,7 +237,6 @@ body {
     text-align: center;
 }
 
-
 .visual-scroll-down {
     position: absolute;
     top: 40px;
@@ -268,6 +269,23 @@ body {
     text-align: center;
 }
 
+.visual-title {
+    position: absolute;
+    right: 0;
+    top: 50rem;
+}
+
+.visual-title span {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'notosanskr', 'Pretendard';
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    float: left;
+}
+
 /* profile */
 .prof {
     position: relative;
@@ -280,6 +298,7 @@ body {
     padding: 12rem 0;
 }
 
+/* pro2 */
 .prof2 {
     position: relative;
     display: block;
@@ -309,7 +328,7 @@ body {
 .pro-2-img {
     position: absolute;
     top: 13rem;
-    left: 43rem;
+    left: 38rem;
 }
 
 .prof-right {
@@ -363,25 +382,61 @@ body {
     font-weight: 700;
 }
 
-.possibility-txt li {
+.possibility-txt>li {
     margin-bottom: 5rem;
 }
 
 .possibility-txt b {
+    position: relative;
     font-size: 2.4rem;
+    margin-right: 2rem;
 }
 
-.possibility-txt b ::before {
-    content: "";
-    display: inline-block;
+.possibility-txt b::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: -1rem;
     width: 1px;
-    height: 10px;
-    margin: 1.5rem;
-    background-color: #b0b0b0;
+    height: 22px;
+    background-color: #bbb;
 }
 
 .prof-box-txt p {
-    color: bbb;
+    color: #bbb;
+}
+
+.prof-right {
+    position: relative;
+    display: block;
+}
+
+.prof-chart {
+    position: relative;
+    display: block;
+}
+
+.prof-chart span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.prof-chart p {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pro-main-chart {
+    transform: scale(0.1);
+    opacity: 0;
+}
+
+.pro-main-chart-active {
+    opacity: 1;
+    transform: scale(1.0);
+    transition: transform 0.8s;
 }
 
 /* publ */
@@ -452,8 +507,7 @@ body {
 
 .publ-box-right {
     position: relative;
-    display: block;
-    width: 49rem;
+    display: inline-block;
     height: 100%;
     float: left;
 }
@@ -501,48 +555,18 @@ body {
 
 .sw-publ-control {
     position: relative;
-    bottom: 10rem;
+    bottom: 7.5rem;
     left: calc(50% + 20rem);
     z-index: 999;
 }
 
-.sw-publ-prev {
-    position: relative;
-    display: block;
-    width: 2.6rem;
-    height: 2rem;
-    background: url('../images/swiperArrP.png')no-repeat;
-    background-position: 0 0;
-}
-
-.sw-publ-prev:hover {
-    background-position: 0 -2rem;
-    cursor: pointer;
-}
-
-.sw-publ-next {
-    position: absolute;
-    left: 11.5rem;
-    top: 0;
-    display: block;
-    width: 2.6rem;
-    height: 2rem;
-    background: url('../images/swiperArrN.png')no-repeat;
-    background-position: 0 0;
-}
-
-.sw-publ-next:hover {
-    background-position: 0 -2rem;
-    cursor: pointer;
-}
-
 .sw-publ-pg {
     position: absolute;
-    left: 2.6rem;
-    top: -2rem;
-    width: 9rem;
+    left: 4.1rem;
+    top: -4rem;
+    width: 25rem;
     font-family: 'notosanskr', 'Pretendard';
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: -0.04rem;
     color: #bbb;
@@ -555,10 +579,27 @@ body {
     font-weight: 400;
 }
 
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
 .publ-box-txt {
     position: relative;
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #333;
     letter-spacing: -0.0375rem;
@@ -567,97 +608,10 @@ body {
     text-transform: uppercase;
 }
 
-/* .publ-box-txt p {
-    position: relative;
-    font-size: 4rem;
-    color: #333;
-    font-weight: 500;
-} */
-
 .publ-box-txt p {
     position: relative;
     font-size: 1.7rem;
     color: #666;
-}
-
-/* rede */
-.rede {
-    position: relative;
-    display: block;
-    height: 94rem;
-    overflow: hidden;
-}
-
-.rede .container {
-    padding: 12rem 0;
-}
-
-.sw-rede {
-    position: absolute;
-    top: 35rem;
-}
-
-.rede-box {
-    position: relative;
-    display: block;
-    height: 100%;
-    text-align: center;
-}
-
-.rede-box-desc {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0);
-    text-align: center;
-    color: #000;
-    padding: 2rem;
-    border-radius: 1rem;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.rede-box:hover .rede-box-desc {
-    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
-    opacity: 1;
-}
-
-.rede-box-desc h3 {
-    font-size: 3rem;
-    margin-bottom: 5rem;
-}
-
-.rede-box-desc p {
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
-    width: 100%;
-}
-
-.rede-box-bt {
-    position: absolute;
-    left: 0;
-    bottom: 7rem;
-    width: 100%;
-    text-align: center;
-}
-
-.rede-box-bt a {
-    display: inline-block;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #fff;
-    padding: 0.5rem 1rem;
-    color: #333;
-    border-radius: 5rem;
-    margin-right: 1rem;
-}
-
-.rede-box-bt :hover {
-    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
-    color: #fff;
 }
 
 /* otherwork */
@@ -685,27 +639,14 @@ body {
 
 .other-list li {
     margin-bottom: 1.2rem;
-    margin-right: 10rem;
 }
 
 .other-list img {
     filter: grayscale(100%);
-
 }
 
 .other-list img:hover {
     filter: grayscale(0%);
-}
-
-.other-list-scroll {
-    position: relative;
-}
-
-.other-list-scroll p {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #333;
-    text-align:center;
 }
 
 .other-right {
@@ -725,7 +666,6 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-
 }
 
 @keyframes scrollmotion {
@@ -763,6 +703,7 @@ body {
     right: 0;
     top: 20rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .other-txt {
@@ -771,14 +712,30 @@ body {
     margin-top: 5rem;
 }
 
+.other-txt b {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.other-txt b::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1.2rem;
+    width: 1px;
+    height: 20px;
+    background-color: #bbb;
+}
+
+
 .sw-other-gallery {}
 
 #etc_mokup1_img {
     position: absolute;
-    top: 12.5rem;
-    left: 1.3rem;
-    width: 12.6rem;
-    height: 25.7rem;
+    top: 11.5rem;
+    left: 1.2rem;
+    width: 12.4rem;
+    height: 25.6rem;
     border-radius: 11px;
     cursor: pointer;
     overflow: hidden;
@@ -792,9 +749,9 @@ body {
 
 #etc_mokup2_img {
     position: absolute;
-    top: 6.5rem;
-    left: 20.6rem;
-    width: 43.95rem;
+    top: 5.5rem;
+    left: 19.9rem;
+    width: 43.2rem;
     height: 31rem;
     border-radius: 10px;
     cursor: pointer;
@@ -808,8 +765,8 @@ body {
 #etc_mokup4_img {
     position: absolute;
     top: 5.5rem;
-    left: 8rem;
-    width: 50.5rem;
+    left: 7.4rem;
+    width: 50.2rem;
     height: 31.5rem;
     cursor: pointer;
     overflow: hidden;
@@ -909,11 +866,23 @@ body {
     position: absolute;
     display: block;
     top: -5rem;
-    left: 25rem
+    left: 20rem;
 }
 
+.cont-middle {
+    position: absolute;
+    top: -32px;
+    left: 36rem;
+}
+
+.cont-middle p {
+    color: #333;
+    font-size: 1.8rem;
+}
+
+
 .cont-qr {
-    margin-left: 35rem;
+    margin-left: 30rem;
 }
 
 .cont-right {

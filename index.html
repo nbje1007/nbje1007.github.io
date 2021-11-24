@@ -26,23 +26,29 @@
 
     <!-- nicescroll.js -->
     <script src="js/jquery.nicescroll.min.js"></script>
-    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <!-- Typing -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
+
     <script src="js/swiper/swiper.min.js"></script>
     <link href="js/aos/aos.css" rel="stylesheet">
     <script src="js/aos/aos.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
+    <!-- <script src="js/jquery.nicescroll.min.js"></script> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" link rel="stylesheet"
+        type="text/css" href="css/main.css">
+    <script src="js/waypoints.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
     <button class="gotop">
-        <i class="fas fa-angle-up"></i>
+        <i class="fas fa-angle-up">
+        </i>
     </button>
     <div class="wrap" id="home">
         <!-- header -->
@@ -52,7 +58,7 @@
                 <ul class="gnb">
                     <li><a href="#profile" class="move">profile</a>
                     <li><a href="#publshing" class="move">Publishing</a></li>
-                    <li><a href="#redesign" class="move">redesign</a></li>
+                    <!-- <li><a href="#redesign" class="move">redesign</a></li> -->
                     <li><a href="#otherwork" class="move">other work</a></li>
                     <li><a href="#life" class="move">life</a></li>
                     <li><a href="#contact" class="move">contact</a></li>
@@ -75,6 +81,9 @@
                 <div class="visual-scroll">
                     <img src="images/scroll.png" class="visual-scroll-down" alt="스크롤">
                     <p>scroll down</p>
+                </div>
+                <div class="visual-title">
+                    <span>web design</span>
                 </div>
             </div>
         </section>
@@ -118,7 +127,7 @@
                             인재 양성 과정 수료<br>
                             <br>
                             <br>
-                            <b>WORK</b><br>
+                            <b>CAREER</b><br>
                             2017.07 ~ 2021.06<br>
                             주식회사 클라이 디자인팀 대리<br>
                             <br>
@@ -160,48 +169,140 @@
         </section>
         <!--// profile-1 -->
         <!-- profile-2 -->
-        <section class="prof2" id="profile" data-aos="fade-up" data-aos-delay="500"
-            data-aos-anchor-placement="top-center">
+        <section class="prof2" id="profile">
             <div class="container clearfix">
                 <div class="prof-left left">
                     <span class="possibility-title">
                         <h3>Possibility</h3>
                         <ul class="possibility-txt">
                             <li>
-                                <b>창의성</b> Creative<br>
+                                <b>창의성</b>creativity<br>
                                 <br>
                                 디자인 전공으로 전문 지식을 쌓고 실무를 통해 배우고 경험한<br>
                                 디자인을 바탕으로 끊임없이 발전된 디자인을 창조합니다.<br>
+                            </li>
                             <li>
-                            <li>
-                                <b>소통</b> Creative<br>
+                                <b>소통</b>communication<br>
                                 <br>
                                 의견을 내는 것을 두려워하지 않고, 다른 의견을 경청하며 피드백을<br>
                                 적극 수용하는 등 열린 자세로 원활한 소통을 이끌 수 있습니다.<br>
                             </li>
                             <li>
-                                <b>책임감과 인내심</b> Perseverance<br>
+                                <b>책임감과 인내심</b>Perseverance<br>
                                 <br>
                                 작업을 진행할 때 체계적으로 정리하고 끝까지 해내는 인내심을 가지고 있습니다.
                                 <br>
                                 정해진 시간 안에서 책임감을 가지고 주어진 업무를 수행해 나갑니다.<br>
                             </li>
+                        </ul>
                     </span>
                 </div>
                 <div class="prof-right right">
-                    <img src="images/pro_6.png" alt="프로필">
+                    <div class="prof-chart">
+                        <span><img src="images/pro_way6.png" alt=""></span>
+                        <p><img src="images/pro_way7.png" alt="" class="pro-main-chart">
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <!--// profile-2 -->
         <!-- publshing -->
-        <section class="publ" id="publshing" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <section class="publ" id="publshing">
             <div class="container">
                 <h2>Publishing</h2>
                 <div class="publ_slide">
                     <!-- 퍼블리싱 슬라이드 -->
-                    <div class="swiper-container sw-publ">
+                    <div class="swiper-container sw-publ" data-aos="fade-up" data-aos-anchor-placement="top-center">
                         <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="publ-box left">
+                                    <div class="publ-box-mockup">
+                                        <img src="images/publ_re1_m.png" alt="" class="publ-mockup-img">
+                                        <div class="publ-box-mockup-txt">
+                                            <p>기존 사이트를 기반으로 제작된 <b>웹 퍼블리싱</b> 리디자인 사이트입니다.</p>
+                                            <div class="publ-box-bt">
+                                                <a href="http://sumokwon.jeju.go.kr/" target="_blank">
+                                                    ORIGINAL SITE
+                                                </a>
+                                                <a href="https://nbje1007.github.io/stxconst/" target="_blank">
+                                                    PROCESS
+                                                </a>
+                                                <a href="https://nbje1007.github.io/stxconst/" target="_blank">
+                                                    GIT HUB
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="publ-box-right ">
+                                    <span class="publ-box-txt">
+                                        <b>제주한라 수목원</b><br>
+                                        <p>s u m o k w on</p>
+                                        <br>
+                                        <b>기여도</b><br>
+                                        퍼블리싱100% + 디자인100%<br>
+                                        <br>
+                                        <b>사용프로그램</b><br>
+                                        Photoshop Illustrator<br>
+                                        <br>
+                                        <b>프로젝트 소개</b><br>
+                                        사용자들이 복잡하지 않고 한눈에 정보를<br>
+                                        습득할 수 있도록 레이아웃을 구성하였습니다.<br>
+                                        <br>
+                                        <b>제작기간</b> 10일<br>
+                                        <br>
+                                        <b>제작페이지</b> 메인 페이지<br>
+                                        <br>
+                                        <b>제작툴</b> 비주얼 코드<br>
+                                        <br>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box left">
+                                    <div class="publ-box-mockup">
+                                        <img src="images/publ_re2_m.png" alt="" class="publ-mockup-img">
+                                        <div class="publ-box-mockup-txt">
+                                            <p>기존 사이트를 기반으로 제작된 <b>웹 퍼블리싱</b> 리디자인 사이트입니다.</p>
+                                            <div class="publ-box-bt">
+                                                <a href="http://www.urbandollkiss.co.kr/" target="_blank">
+                                                    ORIGINAL SITE
+                                                </a>
+                                                <a href="https://nbje1007.github.io/stxconst/" target="_blank">
+                                                    PROCESS
+                                                </a>
+                                                <a href="https://nbje1007.github.io/stxconst/" target="_blank">
+                                                    GIT HUB
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="publ-box-right ">
+                                    <span class="publ-box-txt">
+                                        <b>어반돌키스</b><br>
+                                        <p>u r b a n d o l l k i s s</p>
+                                        <br>
+                                        <b>기여도</b><br>
+                                        퍼블리싱100% + 디자인100%<br>
+                                        <br>
+                                        <b>사용프로그램</b><br>
+                                        Photoshop Illustrator<br>
+                                        <br>
+                                        <b>프로젝트 소개</b><br>
+                                        다양한 컨텐츠와 주조색상을 추가하여 브랜드<br>
+                                        이미지를 상승시키는데 중점을 두었습니다.<br>
+                                        <br>
+                                        <b>제작기간</b> 10일<br>
+                                        <br>
+                                        <b>제작페이지</b> 메인 페이지<br>
+                                        <br>
+                                        <b>제작툴</b> 비주얼 코드<br>
+                                        <br>
+                                    </span>
+                                </div>
+                            </div>
                             <div class="swiper-slide">
                                 <div class="publ-box left">
                                     <div class="publ-box-mockup">
@@ -231,8 +332,8 @@
                                         Html5 CSS<br>
                                         <br>
                                         <b>프로젝트 소개</b><br>
-                                        웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
-                                        처음 만들었던 사이트입니다.<br>
+                                        웹디자인 실무 교육과정을 통해 코딩을<br>
+                                        처음 접하고 제작했던 사이트입니다.<br>
                                         <br>
                                         <b>제작기간</b> 10일<br>
                                         <br>
@@ -313,8 +414,9 @@
                                         Html5 CSS<br>
                                         <br>
                                         <b>프로젝트 소개</b><br>
-                                        웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
-                                        처음 만들었던 사이트입니다.<br>
+                                        html,css로 기본적인 메뉴 구조를 구성하고<br>
+                                        jQuery를 활용하여 go top을 제작하였습니다.
+                                        <br>
                                         <br>
                                         <b>제작기간</b> 10일<br>
                                         <br>
@@ -354,8 +456,8 @@
                                         Html5 CSS<br>
                                         <br>
                                         <b>프로젝트 소개</b><br>
-                                        웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
-                                        처음 만들었던 사이트입니다.<br>
+                                        html과 css에 대한 이해도를 <br>
+                                        높일수 있는 작업이였습니다.<br>
                                         <br>
                                         <b>제작기간</b> 10일<br>
                                         <br>
@@ -395,8 +497,8 @@
                                         Html5 CSS<br>
                                         <br>
                                         <b>프로젝트 소개</b><br>
-                                        웹디자인 실무 교육과정을 통해 코딩을 접하고<br>
-                                        처음 만들었던 사이트입니다.<br>
+                                        flex와 미디어 쿼리를 활용하여<br>
+                                        반응형 웹사이트를 제작하였습니다.<br>
                                         <br>
                                         <b>제작기간</b> 10일<br>
                                         <br>
@@ -410,7 +512,6 @@
                         </div>
                     </div>
                 </div>
-                <!--// 퍼블리싱 슬라이드 -->
                 <div class="sw-publ-control">
                     <span class="sw-publ-prev"></span>
                     <div class="swiper-pagination sw-publ-pg"></div>
@@ -419,122 +520,13 @@
             </div>
         </section>
     </div>
-    </section>
     <!--// publshing -->
-    <!-- redesing -->
-    <section class="rede" id="redesign" data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-center">
-        <div class="container">
-            <h2>redesign</h2>
-            <div class="swiper-container sw-rede">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="rede-box">
-                            <img src="images/red_1.png" alt="">
-                            <div class="rede-box-desc">
-                                <h3>개인 포트폴리오</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum hic tenetur
-                                    voluptas minima
-                                    sed quaerat quas officiis consectetur fuga illum doloribus consequuntur
-                                    quis,
-                                    minus
-                                    exercitationem eos corporis assumenda omnis dignissimos?
-                                </p>
-                            </div>
-                            <div class="rede-box-bt">
-                                <a href="work/redesign1/process.html" target="_blank"><i class="fas fa-layer-group"></i>
-                                    Process</a>
-                                <a href="work/redesign1/design.html" target="_blank"><i class="fas fa-fill-drip"></i>
-                                    Work</a>
-                                <a href="https://casper.hyundai.com/" target="_blank"><i class="fas fa-crosshairs"></i>
-                                    Origin</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="rede-box">
-                            <img src="images/red_2.png" alt="">
-                            <div class="rede-box-desc">
-                                <h3>수목원</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum hic tenetur
-                                    voluptas minima
-                                    sed quaerat quas officiis consectetur fuga illum doloribus consequuntur
-                                    quis,
-                                    minus
-                                    exercitationem eos corporis assumenda omnis dignissimos?
-                                </p>
-                            </div>
-                            <div class="rede-box-bt">
-                                <a href="work/redesign2/process.html" target="_blank"><i class="fas fa-layer-group"></i>
-                                    Process</a>
-                                <a href="work/redesign2/design.html" target="_blank"><i class="fas fa-fill-drip"></i>
-                                    Work</a>
-                                <a href="#" target="_blank"><i class="fas fa-crosshairs"></i> Origin</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="rede-box">
-                            <img src="images/red_1.png" alt="">
-                            <div class="rede-box-desc">
-                                <h3>어반돌키스</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum hic tenetur
-                                    voluptas minima
-                                    sed quaerat quas officiis consectetur fuga illum doloribus consequuntur
-                                    quis,
-                                    minus
-                                    exercitationem eos corporis assumenda omnis dignissimos?
-                                </p>
-                            </div>
-                            <div class="rede-box-bt">
-                                <a href="work/redesign1/process.html" target="_blank"><i class="fas fa-layer-group"></i>
-                                    Process</a>
-                                <a href="work/redesign1/design.html" target="_blank"><i class="fas fa-fill-drip"></i>
-                                    Work</a>
-                                <a href="https://casper.hyundai.com/" target="_blank"><i class="fas fa-crosshairs"></i>
-                                    Origin</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="rede-box">
-                            <img src="images/red_1.png" alt="">
-                            <div class="rede-box-desc">
-                                <h3>교육센터</h3>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum hic tenetur
-                                    voluptas minima
-                                    sed quaerat quas officiis consectetur fuga illum doloribus consequuntur
-                                    quis,
-                                    minus
-                                    exercitationem eos corporis assumenda omnis dignissimos?
-                                </p>
-                            </div>
-                            <div class="rede-box-bt">
-                                <a href="work/redesign2/process.html" target="_blank"><i class="fas fa-layer-group"></i>
-                                    Process</a>
-                                <a href="work/redesign2/design.html" target="_blank"><i class="fas fa-fill-drip"></i>
-                                    Work</a>
-                                <a href="#" target="_blank"><i class="fas fa-crosshairs"></i> Origin</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--// redesing -->
     <!-- other work -->
     <section class="otherwork" id="otherwork">
         <div class="container">
             <h2>other work</h2>
             <div class="other-wrap clearfix">
                 <div class="other-list left" data-aos="zoom-out-right" data-aos-delay="500">
-                    <div class="other-list-scroll">
-                        <p>mouse hover</p>
-                    </div>
                     <ul class="other-list">
                         <li class="other-etc1">
                             <a href="#" target="_blank">
@@ -558,17 +550,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="other-right right">
-                    <div class="swiper-container sw-other">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#" target="_blank">
-                                    <div id="etc_mokup1_img">
-                                        <img src="images/etc_kly_1.png" alt="커스텀 디자인">
-                                    </div>
-                                    <div id="etc_mokup2_img">
-                                        <img src="images/etc_kly_2.png" alt="커스텀 디자인">
-                                    </div>
+                <div class="other-right right" data-aos="zoom-out-left" data-aos-delay="500">
+                    <div class="other-list-scroll">
+                        <div class="swiper-container sw-other">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="images/etc_kly_1.png" target="_blank">
+                                        <div id="etc_mokup1_img">
+                                            <img src="images/etc_kly_1.png" alt="커스텀 디자인">
+                                        </div>
+                                    </a>
+                                    <a href="images/etc2_kly_2.png" target="_blank">
+                                        <div id="etc_mokup2_img">
+                                            <img src="images/etc_kly_2.png" alt="커스텀 디자인">
+                                        </div>
+                                    </a>
                                     <img src="images/etc_mokup1.png" alt="커스텀디자인">
                                     <div class="etc-scroll">
                                         <img src="images/scroll_2.png" class="visual-scroll-down" alt="스크롤">
@@ -578,39 +574,42 @@
                                         <span><b>Custom design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
                                             디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" target="_blank">
-                                    <img src="images/etc_mokup2.png" alt="패턴 디자인">
-                                    <div class="other-txt">
-                                        <span><b>Pattern design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
-                                            디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
-                                    </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/etc_mokup3.png" alt="패턴 디자인">
-                                <div class="other-txt">
-                                    <span><b>Pattern design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
-                                        디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
                                 </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#" target="_blank">
-                                    <div id="etc_mokup4_img">
-                                        <img src="images/etc_logo.png" alt="로고 디자인">
-                                    </div>
-                                    <img src="images/etc_mokup4.png" alt="로고디자인">
-                                    <div class="etc-scroll">
-                                        <img src="images/scroll_2.png" class="visual-scroll-down" alt="스크롤">
-                                        <p>scroll down</p>
-                                    </div>
-                                    <div class="other-txt">
-                                        <span><b>Logo design</b> DTP 의류제작을 전문으로 개인과 단체의 아이덴티티에 맞게 제품 기획과<br>
-                                            디자인을 진행하거나, 의뢰를 받아 커스터 마이징 디자인 제품들을 제작하였습니다.</span>
-                                    </div>
-                                </a>
+                                <div class="swiper-slide">
+                                    <a href="images/etc2_uni_1.jpg" target="_blank">
+                                        <img src="images/etc_mokup2.png" alt="패턴 디자인">
+                                        <div class="other-txt">
+                                            <span><b>Pattern design</b> Youth를 주제로 우주 공간의 물체들을 라인으로 표현하였습니다. <br>
+                                                외부광선과 내부광선의 디자인에 효과를 주어 의류용 패턴 디자인을 제작하였습니다.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/etc2_uni_2.jpg" target="_blank">
+                                        <img src="images/etc_mokup3.png" alt="패턴 디자인">
+                                        <div class="other-txt">
+                                            <span><b>Pattern design</b> Classic + geometric을 더해 현대적인 감성으로<br>
+                                                재해석하여 홈패브릭 인테리어용 패턴 디자인을 제작하였습니다.</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/etc2_logo.png" target="_blank">
+                                        <div id="etc_mokup4_img">
+                                            <img src="images/etc_logo.png" alt="로고 디자인">
+                                        </div>
+                                        <img src="images/etc_mokup4.png" alt="로고디자인">
+                                        <div class="etc-scroll">
+                                            <img src="images/scroll_2.png" class="visual-scroll-down" alt="스크롤">
+                                            <p>scroll down</p>
+                                        </div>
+                                        <div class="other-txt">
+                                            <span><b>Logo design</b> 1.자원, 2.에너지, 3.소비를 최소화하자는 의미로 하단 문구를<br>
+                                                3 point zero로 기재하고 하트 아이콘으로 형상화하여 브랜드 아이덴티를 구축하였습니다.<br>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -639,8 +638,8 @@
                     <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
-                    가까운 곳에 방문하여<br>
-                    재충전하는 시간을 보냅니다. </p>
+                    재충전을 위한 다양한<br>
+                    활동으로 항상 활기가 넘칩니다.</p>
             </div>
             <div class="life-list">
                 <span class="life-img" data-aos="fade-down" data-aos-delay="500">
@@ -669,8 +668,8 @@
                     <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
-                    학부생일때 3년동안 보육원<br>
-                    봉사활동을 다녔습니다. </p>
+                    다년간의 봉사활동을 통해<br>
+                    배려와 소통을 배울수 있었습니다. </p>
             </div>
             <div class="life-list">
                 <span class="life-img" data-aos="fade-up" data-aos-delay="500">
@@ -678,7 +677,7 @@
                     <em class="life-list-circle"></em>
                 </span>
                 <p class="life-txt">
-                    다양한 이야기를 나누며 <br>
+                    사람들과 이야기를 나누며 <br>
                     소통하는 것을 좋아합니다.
                 </p>
             </div>
@@ -690,6 +689,9 @@
         <div class="container clearfix">
             <h2> Contact </h2>
             <div class="cont-left left" data-aos="fade-up-right" data-aos-delay="500">
+                <div class="cont-middle">
+                    <p>카카오 오픈채팅방 바로가기
+                </div>
                 <img src="images/cont_2.png" class="cont-point" data-aos="fade-up-left" data-aos-delay="500"
                     data-aos-duration="1000" data-aos-easing="linear">
                 <img src="images/cont_1.png" class="cont-qr">
@@ -709,7 +711,7 @@
                     <a href="http://www.stxconst.co.kr/" target="_blank">
                         PDF다운로드
                     </a>
-                    <a href="https://nbje1007.github.io/stxconst/" target="_blank">
+                    <a href="https://github.com/nbje1007" target="_blank">
                         GIT HUB
                     </a>
                 </div>
