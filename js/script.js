@@ -95,10 +95,10 @@ $(document).ready(function () {
         loop: true
     });
     typewriter.typeString('<b>생각</b>을 <b>함께</b><br>')
-        .pauseFor(1500)
+        .pauseFor(500)
         .typeString('<b>공유</b>하는 <b>디자이너</b><br>')
-        .pauseFor(1500)
+        .pauseFor(500)
         .typeString('<b>곽혜영</b>입니다.')
-        .pauseFor(2000)
+        .pauseFor(500)
         .start();
 });

@@ -16,6 +16,7 @@ a {
     text-decoration: none;
 }
 
+
 img {
     border: 0;
     vertical-align: middle;
@@ -28,11 +29,17 @@ li {
 
 h2 {
     font-family: 'Pretendard';
+    color: #333;
     font-size: 4.8rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
+}
+
+::selection {
+    background-color: #B19FFF;
+    color: #333;
 }
 
 /* SCROLL */
@@ -59,6 +66,7 @@ html {
     font-size: 10px;
     overflow-x: hidden;
 }
+
 
 body {
     font-family: 'Noto Sans KR', 'Pretendard';
@@ -108,15 +116,16 @@ body {
     border: none;
     border-radius: 50px;
     color: #fff;
-    background-color: #8988ff !important;
+    background-color: #d7d0f6 !important;
     font-size: 3rem;
     text-align: center;
     line-height: 2rem;
     z-index: 99;
+    cursor: pointer;
 }
 
 .gotop:hover {
-    background-color: #754ef9 !important;
+    background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
 }
 
 .gotop-active {
@@ -585,9 +594,9 @@ body {
     text-align: center;
     line-height: 20px;
     font-size: 14px;
-    color: #000;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #d7d0f6;
     margin-right: 1rem;
 }
 
