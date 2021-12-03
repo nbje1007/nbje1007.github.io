@@ -31,6 +31,12 @@ $(document).ready(function () {
             },
         }
     });
+    $('.sw-publ').mouseenter(function(){
+        sw_publ.autoplay.stop()
+    })
+    $('.sw-publ').mouseleave(function(){
+        sw_publ.autoplay.start()
+    })
     // 스크롤시 애니메이션 
     $('.pro-main-chart').waypoint(function (dir) {
         if (dir == "down") {
